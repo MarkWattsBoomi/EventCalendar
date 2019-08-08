@@ -1,0 +1,52 @@
+{
+  "name": "event-calendar",
+  "version": "1.0.0",
+  "description": "event calendar",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack -p --config webpack.production.config.js",
+    "build-no-source-map": "webpack -p --config webpack.production.config.js --devtool none",
+    "upload": "node upload.js",
+    "test-unit": "jest --watch",
+    "test-integration": "testcafe-live chrome ./src/__tests__/integration",
+    "test-integration-remote": "testcafe-live remote ./src/__tests__/integration --qr-code",
+    "update": "node update.js",
+    "debug": "ngrok http --host-header=rewrite 8080"
+  },
+  "author": "Dell Boomi",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^3.0.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "tslint": "^5.17.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2",
+    "write-file-webpack-plugin": "4.4.1"
+  },
+  "flow": {
+    "tenantId": "d1b3e73f-3f2a-4159-8fbb-ceb11a84e28d",
+    "id": "88b7b053-049b-402d-b614-597bed6a4b78",
+    "versionId": "",
+    "filenames": {
+      "js": "EventCalendar.js",
+      "css": "EventCalendar.css"
+    }
+  },
+  "peerDependencies": {},
+  "bundledDependencies": [],
+  "optionalDependencies": {}
+}

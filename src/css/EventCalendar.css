@@ -1,0 +1,111 @@
+.event-calendar {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid #c1c1c1;
+    border-radius: 20px;
+}
+
+.ec-title-bar {
+    width: 100%;
+    flex: 1 0 auto;
+    background-image: linear-gradient(to bottom, #c5e5ff, #2196f3);
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.ec-title-bar-button-container-left {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: 30px;
+    color: #fefefe;
+}
+
+.ec-title-bar-button-container-right {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.ec-month-nav-button {
+    cursor: pointer;
+    font-size: 30px;
+    color: #fefefe;
+}
+
+.ec-month-nav-button:hover {
+    color: #666;
+}
+
+.ec-title-bar-title-container {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ec-month-nav-title {
+    font-size: 30px;
+    color: #fefefe;
+}
+
+.ec-body {
+    width: 100%;
+    flex: 1 1 auto;
+    background-color: #fefefe;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.ec-body-client {
+    margin: 10px;
+    display: block;
+}
+
+.ec-table {
+    width: 100%;
+}
+
+.ec-table-header {
+    border-bottom: 2px solid #666;
+}
+
+.ec-table-th {
+    text-align: -webkit-center !important;
+    font-size: 18px
+}
+
+.day {
+    text-align: -webkit-center !important;
+    font-size: 18px
+}
+
+.day-disabled {
+    color: #ccc;
+}
+
+.day-event {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.meeting {
+    background-color: #2196f3;
+    color: #fefefe;
+}
+
+.free {
+    background-color: #c7e69f;
+    color: #333;
+}
+
